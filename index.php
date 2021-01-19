@@ -36,12 +36,12 @@
 
 		<div class="centered">
 			<h3>My local MAMP Setup</h2>
-			<img src="images/MAMP.jpg" alt="Local Mamp page">
+			<img src="images/MAMP.JPG" alt="Local Mamp page">
 		</div>
 		
 		<div class="centered">
 			<h3>The PHP error for HW1</h3>
-			<img src="images/phpError.jpg" alt="My PHP error for HW1">
+			<img src="images/phpError.JPG" alt="My PHP error for HW1">
 		</div>
 		<footer>
 			<p><small>&copy; 2021 by <a href="contact.php">John Meyer</a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
