@@ -29,7 +29,7 @@
 					</li>
 					<li><a href="index.php">Classwork</a>
 						<ul>
-							<li><a href="index.php">CW Week2</a></li>
+							<li><a href="weeks/week2/var.php">CW Week2</a></li>
 							<li><a href="#">CW Week3</a></li>
 							<li><a href="#">CW Week4</a></li>
 							<li><a href="#">CW Week5</a></li>
