@@ -42,6 +42,56 @@
 				<p>I have an eclectic set of hobbies from the super nerdy to incredibly sporty. I paint miniatures, play role playing games, ride motorcycles, and am an excellent snowboarder. I spent a season as a snowboard instructor a few years back so in case you ever wanted to learn I can help you out! I can play bass guitar and have been to germany. There's a lot more about me if you ever want to chat.</p>
 			</main>
 
+			<div>
+				<h4>My Classwork</h4>
+				<p>This is the list of all my classwork for it261 at Seattle Central!</p>
+			</div>
+			<div>
+				<h4>Week 2 Classwork</h4>
+				<ul>
+					<li><a href="/it261/weeks/week2/var.php">var.php</a></li>
+					<li><a href="/it261/weeks/week2/var2.php">var2.php</a></li>
+					<li><a href="/it261/weeks/week2/currency.php">currency.php</a></li>
+					<li><a href="/it261/weeks/week2/currency-logic.php">currency-logic.php</a></li>
+					<li><a href="/it261/weeks/week2/heredoc.php">heredoc.php</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4>Week 3 Classwork</h4>
+				<ul>
+					<li><a href="#">Yet to be completed 😮</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4>Week 4 Classwork</h4>
+				<ul>
+					<li><a href="#">Yet to be completed 😮</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4>Week 5 Classwork</h4>
+				<ul>
+					<li><a href="#">Yet to be completed 😮</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4>Week 6 Classwork</h4>
+				<ul>
+					<li><a href="#">Yet to be completed 😮</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4>Week 7 Classwork</h4>
+				<ul>
+					<li><a href="#">Yet to be completed 😮</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4>Week 8 Classwork</h4>
+				<ul>
+					<li><a href="#">Yet to be completed 😮</a></li>
+				</ul>
+			</div>
 			<div class="showcase1">
 				<h3>My local MAMP Setup</h2>
 				<img class="image" src="images/MAMP.JPG" alt="Local Mamp page">
