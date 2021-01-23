@@ -1,78 +1,81 @@
 * {
     box-sizing: border-box;
-}
-
-header {
-    line-height: 2;
-    grid-column: 1 / span 5;
-}
-
-header h1 {
-    padding: 1.5rem;
+    margin: 0;
 }
 
 .navbar {
     background-color: darkorange;
     display: inline-block;
     width: 100%;
-    padding-left: 2rem;
+    padding-left: 18vw;
 }
 
-ul {
+.navbar ul {
     background: darkorange;
     list-style: none;
-    margin: 0;
     padding-left: 0;
+    display: block;
 }
 
-li {
+.navbar li {
     color: #fff;
     background: darkorange;
     display: block;
     float: left;
-    padding: 1rem;
     position: relative;
     text-decoration: none;
-    transition-duration: 0.5s;
+    /* transition-duration: 0.5s; */
 }
 
-li a {
+.navbar li a {
     color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    text-align: center;
 }
 
-li:hover,
-li:focus-within {
+.navbar li:hover,
+.navbar li:focus-within {
     background: red;
     cursor: pointer;
 }
 
-li:focus-within a {
+.navbar li:focus-within a {
     outline: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
 }
 
-ul li ul {
+.navbar ul li ul {
     background: orange;
     visibility: hidden;
     opacity: 0;
     min-width: 5rem;
     position: absolute;
     /* transition: all 0.5s ease; */
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     left: 0;
     display: none;
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
-ul li:hover > ul,
-ul li:focus-within > ul,
-ul li ul:hover,
-ul li ul:focus {
+.navbar ul li:hover > ul,
+.navbar ul li:focus-within > ul,
+.navbar ul li ul:hover,
+.navbar ul li ul:focus {
     visibility: visible;
     opacity: 1;
     display: block;
+    width: 100%;
+    height: 100%;
 }
 
-ul li ul li {
+.navbar ul li ul li {
     clear: both;
     width: 100%;
+    padding: 0;
 }

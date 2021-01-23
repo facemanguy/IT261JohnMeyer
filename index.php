@@ -12,35 +12,24 @@
 	</head>
 
 	<body>
+		<nav class="navbar">
+			<ul class="navbar-nav">
+				<li><a href="index.php">Home</a></li>
+				<li><a href="index.php">Assignments</a>
+					<ul>
+						<li><a href="index.php">HW 1: MAMP</a></li>
+						<li><a href="index.php">HW 2: Portal Page</a></li>
+						<li><a href="#">HW 3: Using a Switch</a></li>
+						<li><a href="#">HW 4: Trouble shooting</a></li>
+						<li><a href="#">HW 5: Calculating Form</a></li>
+					</ul>
+				</li>
+				<li><a href="index.php">Classwork</a></li>
+				<li><a href="contact.php">Contact</a></li>
+			</ul>
+		</nav>
 		<header>
-			<h1>John Meyer's IT261 Portal</h1>
-
-			<nav class="navbar">
-				<ul class="navbar-nav">
-					<li><a href="index.php">Home</a></li>
-					<li><a href="index.php">Assignments</a>
-						<ul>
-							<li><a href="index.php">HW1:MAMP</a></li>
-							<li><a href="index.php">HW2: Portal Page</a></li>
-							<li><a href="#">HW3: Using a Switch</a></li>
-							<li><a href="#">HW4: Troubleshooting</a></li>
-							<li><a href="#">HW5: Calculating Form</a></li>
-						</ul>
-					</li>
-					<li><a href="index.php">Classwork</a>
-						<ul>
-							<li><a href="weeks/week2/var.php">CW Week2</a></li>
-							<li><a href="#">CW Week3</a></li>
-							<li><a href="#">CW Week4</a></li>
-							<li><a href="#">CW Week5</a></li>
-							<li><a href="#">CW Week6</a></li>
-							<li><a href="#">CW Week7</a></li>
-							<li><a href="#">CW Week8</a></li>
-						</ul>
-					</li>
-					<li><a href="contact.php">Contact</a></li>
-				</ul>
-			</nav>
+			<h1>John Meyer's IT261 Portal Home</h1>
 		</header>
 		<content>
 			<aside id="portrait">

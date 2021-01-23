@@ -12,6 +12,15 @@ body {
     background-color:#f4f4f4;
 }
 
+header {
+    line-height: 2;
+    grid-column: 1 / span 5;
+}
+
+header h1 {
+    padding: 1.5rem;
+}
+
 content {
     margin-left: 2rem;
     margin-right: 2rem;
