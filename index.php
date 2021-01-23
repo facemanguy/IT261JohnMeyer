@@ -93,7 +93,7 @@
 				</ul>
 			</div>
 			<div class="showcase1">
-				<h3>My local MAMP Setup</h2>
+				<h3>My local MAMP Setup</h3>
 				<img class="image" src="images/MAMP.JPG" alt="Local Mamp page">
 			</div>
 			
