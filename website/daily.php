@@ -108,6 +108,7 @@ switch($today){
                     <li><a href="daily.php?today=Saturday">Saturday</a></li>
                     <li><a href="daily.php?today=Sunday">Sunday</a></li>
                 </ul>
+                <p><?php echo "I thought ".$alt." would like ".$today."s"?></p>
 			</div>
 
 			
