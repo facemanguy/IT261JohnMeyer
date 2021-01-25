@@ -14,7 +14,7 @@
 	<body>
 		<nav class="navbar">
 			<ul class="navbar-nav">
-				<li><a href="index.php">Home</a></li>
+				<li id="active"><a href="index.php">Home</a></li>
 				<li><a href="index.php">Assignments</a>
 					<ul>
 						<li><a href="index.php">HW 1: MAMP</a></li>
