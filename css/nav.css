@@ -80,11 +80,11 @@
     padding: 0;
 }
 
-#active {
+.navbar li.active {
     background-color: red;
 }
 
-#active a{
+.active a{
     color: white;
     font-weight: bold;
 }
