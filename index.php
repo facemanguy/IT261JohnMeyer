@@ -15,16 +15,17 @@
 		<nav class="navbar">
 			<ul class="navbar-nav">
 				<li id="active"><a href="index.php">Home</a></li>
-				<li><a href="index.php">Assignments</a>
+				<li><a href="index.php">Homework Assignments</a>
 					<ul>
-						<li><a href="index.php">HW 1: MAMP</a></li>
+						<li><a href="index.php#mamp">HW 1: MAMP</a></li>
 						<li><a href="index.php">HW 2: Portal Page</a></li>
-						<li><a href="#">HW 3: Using a Switch</a></li>
-						<li><a href="#">HW 4: Trouble shooting</a></li>
+						<li><a href="website/daily.php">HW 3: Using a Switch</a></li>
+						<li><a href="#">HW 4: TroubleShooting</a></li>
 						<li><a href="#">HW 5: Calculating Form</a></li>
 					</ul>
 				</li>
-				<li><a href="index.php">Classwork</a></li>
+				<li><a href="index.php#classwork">Classwork</a></li>
+				<li><a href="website/index.php">Project Website</a></li>
 				<li><a href="contact.php">Contact</a></li>
 			</ul>
 		</nav>
@@ -42,7 +43,7 @@
 				<p>I have an eclectic set of hobbies from the super nerdy to incredibly sporty. I paint miniatures, play role playing games, ride motorcycles, and am an excellent snowboarder. I spent a season as a snowboard instructor a few years back so in case you ever wanted to learn I can help you out! I can play bass guitar and have been to germany. There's a lot more about me if you ever want to chat.</p>
 			</main>
 
-			<div>
+			<div id="classwork">
 				<h4>My Classwork</h4>
 				<p>This is the list of all my classwork for it261 at Seattle Central!</p>
 			</div>
@@ -59,7 +60,12 @@
 			<div>
 				<h4>Week 3 Classwork</h4>
 				<ul>
-					<li><a href="#">Yet to be completed 😮</a></li>
+					<li><a href="/it261/weeks/week3/foreach.php">foreach.php</a></li>
+					<li><a href="/it261/weeks/week3/forloop.php">forloop.php</a></li>
+					<li><a href="/it261/weeks/week3/if.php">if.php</a></li>
+					<li><a href="/it261/weeks/week3/data-types.php">data-types.php</a></li>
+					<li><a href="/it261/weeks/week3/date.php">date.php</a></li>
+					<li><a href="/it261/weeks/week3/switch.php">switch.php</a></li>
 				</ul>
 			</div>
 			<div>
@@ -97,7 +103,7 @@
 				<img class="image" src="images/MAMP.JPG" alt="Local Mamp page">
 			</div>
 			
-			<div class="showcase2">
+			<div id="mamp" class="showcase2">
 				<h3>The PHP error for HW1</h3>
 				<img class="image" src="images/phpError.JPG" alt="My PHP error for HW1">
 			</div>		
