@@ -53,7 +53,7 @@ header {
 }
 
 .content2 {
-    grid-row-start: 4 / 5;
+    grid-row: 4 / 5;
     grid-column: 3 / 5;
 }
 
@@ -64,7 +64,7 @@ header {
 }
 
 #logobox{
-    padding: auto;
+    padding: inherit;
     margin-right: 2vw;
     max-width: 3.6rem;
     height: 100%;
