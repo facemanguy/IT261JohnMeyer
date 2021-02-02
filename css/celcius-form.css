@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: wheat;
+}
+
+form {
+    width: 28vw;
+    margin: 3rem auto;
+}
+
+fieldset {
+    padding: 1rem;
+}
+
+input {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.cool {
+    color: darkcyan;
+}
+
+.crisp {
+    color: springgreen;
+}
+
+.warm {
+    color: crimson;
+}
+
+.hot {
+    color: tomato;
+}

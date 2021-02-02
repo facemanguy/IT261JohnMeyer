@@ -20,7 +20,7 @@
 						<li><a href="index.php#mamp">HW 1: MAMP</a></li>
 						<li><a href="index.php">HW 2: Portal Page</a></li>
 						<li><a href="website/daily.php">HW 3: Using a Switch</a></li>
-						<li><a href="#">HW 4: TroubleShooting</a></li>
+						<li><a href="weeks/week4/adder.php">HW 4: TroubleShooting</a></li>
 						<li><a href="#">HW 5: Calculating Form</a></li>
 					</ul>
 				</li>
@@ -71,7 +71,10 @@
 			<div>
 				<h4>Week 4 Classwork</h4>
 				<ul>
-					<li><a href="#">Yet to be completed 😮</a></li>
+					<li><a href="/it261/weeks/week4/form1.php">form1.php</a></li>
+					<li><a href="/it261/weeks/week4/form2.php">form2.php</a></li>
+					<li><a href="/it261/weeks/week4/celcius-form.php">celcius-form.php</a></li>
+					<li><a href="/it261/weeks/week4/login-basic.php">login-basic.php</a></li>
 				</ul>
 			</div>
 			<div>
