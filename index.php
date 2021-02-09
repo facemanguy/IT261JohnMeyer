@@ -22,6 +22,7 @@
 						<li><a href="website/daily.php">HW 3: Using a Switch</a></li>
 						<li><a href="weeks/week4/adder.php">HW 4: TroubleShooting</a></li>
 						<li><a href="#">HW 5: Calculating Form</a></li>
+						<li><a href="#">HW 6: Emailable Form</a></li>
 					</ul>
 				</li>
 				<li><a href="index.php#classwork">Classwork</a></li>
@@ -80,7 +81,11 @@
 			<div>
 				<h4>Week 5 Classwork</h4>
 				<ul>
-					<li><a href="#">Yet to be completed 😮</a></li>
+					<li><a href="/it261/weeks/week5/currency.php">currency.php</a></li>
+					<li><a href="/it261/weeks/week5/currency2.php">currency2.php</a></li>
+					<li><a href="/it261/weeks/week5/currency3.php">currency3.php</a></li>
+					<li><a href="/it261/weeks/week5/currency4.php">currency4.php</a></li>
+					<li><a href="/it261/weeks/week5/login2.php">login2.php</a></li>
 				</ul>
 			</div>
 			<div>
