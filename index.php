@@ -21,7 +21,7 @@
 						<li><a href="index.php">HW 2: Portal Page</a></li>
 						<li><a href="website/daily.php">HW 3: Using a Switch</a></li>
 						<li><a href="weeks/week4/adder.php">HW 4: TroubleShooting</a></li>
-						<li><a href="#">HW 5: Calculating Form</a></li>
+						<li><a href="index.php#classwork">HW 5: Calculating Form</a></li>
 						<li><a href="#">HW 6: Emailable Form</a></li>
 					</ul>
 				</li>
@@ -86,6 +86,10 @@
 					<li><a href="/it261/weeks/week5/currency3.php">currency3.php</a></li>
 					<li><a href="/it261/weeks/week5/currency4.php">currency4.php</a></li>
 					<li><a href="/it261/weeks/week5/login2.php">login2.php</a></li>
+					<li><a href="/it261/weeks/week5/calculator.php">calculator.php</a></li>
+					<li><a href="/it261/weeks/week5/calculator-days.php">calculator-days.php</a></li>
+					<li><a href="/it261/weeks/week5/calculator-days-errors.php">calculator-days-errors.php</a></li>
+					<li><a href="/it261/weeks/week5/calculator-days-errors-sticky.php">calculator-days-errors-sticky.php</a></li>
 				</ul>
 			</div>
 			<div>
