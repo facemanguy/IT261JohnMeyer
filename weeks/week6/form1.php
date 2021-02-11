@@ -70,10 +70,10 @@
         if(isset($_POST['firstName'], $_POST['lastName'], $_POST['email'], $_POST['gender'], $_POST['meads'], $_POST['region'], $_POST['comments'], $_POST['agree'])){
             $to = 'john32meyer@gmail.com';
             $subject = 'Test Email for Form 1 '.date('m/d/y');
-            $body = 'Hello '.$firstName.' '.$lastName.'!';
-            $body .= 'Your email is'.$email.'';
-            $body .= 'Your gender is'.$gender.'';
-            $body .= 'Your region is'.$region.'';
+            $body = 'Hello '.$firstName.' '.$lastName.'!'.PHP_EOL.'
+            Your email is'.$email.''.PHP_EOL.'
+            Your gender is'.$gender.''.PHP_EOL.'
+            Your region is'.$region.'';
 
             mail($to, $subject, $body);
             header('Location:thanks.php');
