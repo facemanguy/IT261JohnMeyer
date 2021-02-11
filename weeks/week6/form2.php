@@ -68,7 +68,7 @@
         }
 
         if(isset($_POST['firstName'], $_POST['lastName'], $_POST['email'], $_POST['gender'], $_POST['meads'], $_POST['region'], $_POST['comments'], $_POST['agree'])){
-            $to = 'szemeo@mystudentswa.com';
+            $to = 'john32meyer@gmail.com';
             $subject = 'Test Email for Form 1 '.date('m/d/y');
             $body = 'Hello '.$firstName.' '.$lastName.'!'.PHP_EOL.'
             Your email is'.$email.''.PHP_EOL.'
