@@ -88,31 +88,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form 1</title>
+    <title>Form 2</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
         <fieldset>
             <label>First Name</label>
-            <input type="text" name="firstName">
+            <input type="text" name="firstName" value="<?php if(isset($_POST['firstName'])) echo htmlspecialchars($_POST['firstName']);?>">
             <span class="error"><?php echo $firstNameError;?></span>
             <label>Last Name</label>
-            <input type="text" name="lastName">
+            <input type="text" name="lastName" value="<?php if(isset($_POST['lastName'])) echo htmlspecialchars($_POST['lastName']);?>">
             <span class="error"><?php echo $lastNameError;?></span>
             <label>Email</label>
-            <input type="email" name="email">
+            <input type="email" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
             <span class="error"><?php echo $emailError;?></span>
             <label>Gender</label>
             <ul>
-                <li><input type="radio" name="gender" value="female"> Female</li>
+                <li><input type="radio" name="gender" value="female" value="female" <?php if(isset($_POST['gender']) && $_POST['gender'] == 'female') echo 'checked="checked"';?>"> Female</li>
                 <li><input type="radio" name="gender" value="male"> Male</li>
                 <li><input type="radio" name="gender" value="other"> Other</li>
             </ul>
             <span class="error"><?php echo $genderError;?></span>
             <label>Mead</label>
             <ul>
-                <li><input type="checkbox" name="meads[]" value="traditional"> Traditional</li>
+                <li><input type="checkbox" name="meads[]" value="traditional" <?php if(isset($_POST['meads']) && in_array('traditional', $meads)) echo'checked="checked"';?>> Traditional</li>
                 <li><input type="checkbox" name="meads[]" value="hibiscus"> Hibiscus</li>
                 <li><input type="checkbox" name="meads[]" value="rasberry"> Rasberry</li>
                 <li><input type="checkbox" name="meads[]" value="blueberry"> Blueberry</li>
