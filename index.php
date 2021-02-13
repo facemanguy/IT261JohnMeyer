@@ -90,6 +90,7 @@
 					<li><a href="/it261/weeks/week5/calculator-days.php">calculator-days.php</a></li>
 					<li><a href="/it261/weeks/week5/calculator-days-errors.php">calculator-days-errors.php</a></li>
 					<li><a href="/it261/weeks/week5/calculator-days-errors-sticky.php">calculator-days-errors-sticky.php</a></li>
+					<li><a href="/it261/weeks/week5/extra-credit.php">Extra-credit.php</a></li>
 				</ul>
 			</div>
 			<div>
