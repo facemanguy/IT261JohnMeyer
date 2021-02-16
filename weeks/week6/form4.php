@@ -7,6 +7,7 @@
     $region = '';
     $comments = '';
     $agree = '';
+    $phone = '';
     
     $firstNameError = '';
     $lastNameError = '';
@@ -16,6 +17,7 @@
     $regionError = '';
     $commentsError = '';
     $agreeError = '';
+    $phoneError = '';
     
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         // If a field is empty create an error variable
@@ -35,6 +37,16 @@
             $emailError = 'Please enter an email';
         }else{
             $email = $_POST['email'];
+        }
+
+        if(empty($_POST['phone'])){
+            $phoneError = 'Please enter your phone number';
+        }elseif(array_key_exists('phone', $_POST)){
+            if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])){
+                $phoneError = 'Invalid Format (Use xxx-xxx-xxxx)';
+            }else{
+                $phone = $_POST['phone'];
+            }
         }
 
         if(empty($_POST['gender'])){
@@ -67,16 +79,32 @@
             $agree = $_POST['agree'];
         }
 
-        if(isset($_POST['firstName'], $_POST['lastName'], $_POST['email'], $_POST['gender'], $_POST['meads'], $_POST['region'], $_POST['comments'], $_POST['agree'])){
+        function myMeads(){
+            $myReturn = '';
+            // If array is not empty, implode
+
+            if(!empty($_POST['meads'])){
+                $myReturn = implode(' ,', $_POST['meads']);
+            }
+            return $myReturn;
+        }
+
+
+        if(isset($_POST['firstName'], $_POST['lastName'], $_POST['email'], $_POST['phone'], $_POST['gender'], $_POST['meads'], $_POST['region'], $_POST['comments'], $_POST['agree'])){
             $to = 'john32meyer@gmail.com';
             $subject = 'Test Email for Form 1 '.date('m/d/y');
-            $body = 'Hello '.$firstName.' '.$lastName.'!'.PHP_EOL.'
-            Your email is'.$email.''.PHP_EOL.'
-            Your gender is'.$gender.''.PHP_EOL.'
-            Your region is'.$region.'';
+            $body = 'First and Last name '.$firstName.' '.$lastName.'!'.PHP_EOL.'
+            Your email is: '.$email.''.PHP_EOL.'
+            Your Phone Number is: '.$phone.''.PHP_EOL.'
+            Your gender is: '.$gender.''.PHP_EOL.'
+            Youe comments were: '.$comments.''.PHP_EOL.'
+            Your selected region is: '.$region.''.PHP_EOL.'
+            Your selected meads are: '.myMeads().'';
 
-            if($_POST['firstname'] !== '' && $_POST['lastname'] !== '' && $_POST['email'] !== '' && $_POST['gender'] !== '' && $_POST['meads'] !== '' && $_POST['region'] !== 'NULL' && $_POST['comments'] !== '' && $_POST['agree'] !== ''){
-                mail($to, $subject, $body);
+            $headers = array('From' => 'no-reply@johnmeyerdev.com', 'Reply-to' => ' '.$email.'');
+
+            if($_POST['firstname'] !== '' && $_POST['lastname'] !== '' && $_POST['email'] && $_POST['phone'] !== '' && preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']) && $_POST['gender'] !== '' && $_POST['meads'] !== '' && $_POST['region'] !== 'NULL' && $_POST['comments'] !== '' && $_POST['agree'] !== ''){
+                mail($to, $subject, $body, $headers);
                 header('Location:thanks.php');
             }
 
@@ -91,10 +119,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form 2</title>
+    <title>Form 4</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+    <h1>Phones and Headers</h1>
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
         <fieldset>
             <label>First Name</label>
@@ -106,6 +135,9 @@
             <label>Email</label>
             <input type="email" name="email" value="<?php if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
             <span class="error"><?php echo $emailError;?></span>
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if(isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']);?>">
+            <span class="error"><?php echo $phoneError;?></span>
             <label>Gender</label>
             <ul>
                 <li><input type="radio" name="gender" value="female" value="female" <?php if(isset($_POST['gender']) && $_POST['gender'] == 'female') echo 'checked="checked"';?>"> Female</li>

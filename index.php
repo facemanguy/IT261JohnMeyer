@@ -96,7 +96,13 @@
 			<div>
 				<h4>Week 6 Classwork</h4>
 				<ul>
-					<li><a href="#">Yet to be completed 😮</a></li>
+					<li><a href="/it261/weeks/week6/form1.php">Form1.php</a></li>
+					<li><a href="/it261/weeks/week6/form2.php">Form2.php</a></li>
+					<li><a href="/it261/weeks/week6/form3.php">Form3.php</a></li>
+					<li><a href="/it261/weeks/week6/form4.php">Form4.php</a></li>
+					<li><a href="/it261/weeks/week6/functions.php">Functions.php</a></li>
+					<li><a href="/it261/weeks/week6/index.php">index.php</a></li>
+					<li><a href="/it261/weeks/week6/thanks.php">Thanks.php</a></li>
 				</ul>
 			</div>
 			<div>

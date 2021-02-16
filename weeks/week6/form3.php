@@ -67,13 +67,26 @@
             $agree = $_POST['agree'];
         }
 
+        function myMeads(){
+            $myReturn = '';
+            // If array is not empty, implode
+
+            if(!empty($_POST['meads'])){
+                $myReturn = implode(' ,', $_POST['meads']);
+            }
+            return $myReturn;
+        }
+
+
         if(isset($_POST['firstName'], $_POST['lastName'], $_POST['email'], $_POST['gender'], $_POST['meads'], $_POST['region'], $_POST['comments'], $_POST['agree'])){
             $to = 'john32meyer@gmail.com';
             $subject = 'Test Email for Form 1 '.date('m/d/y');
-            $body = 'Hello '.$firstName.' '.$lastName.'!'.PHP_EOL.'
-            Your email is'.$email.''.PHP_EOL.'
-            Your gender is'.$gender.''.PHP_EOL.'
-            Your region is'.$region.'';
+            $body = 'First and Last name '.$firstName.' '.$lastName.'!'.PHP_EOL.'
+            Your email is: '.$email.''.PHP_EOL.'
+            Your gender is: '.$gender.''.PHP_EOL.'
+            Youe comments were: '.$comments.''.PHP_EOL.'
+            Your selected region is: '.$region.''.PHP_EOL.'
+            Your selected meads are: '.myMeads().'';
 
             if($_POST['firstname'] !== '' && $_POST['lastname'] !== '' && $_POST['email'] !== '' && $_POST['gender'] !== '' && $_POST['meads'] !== '' && $_POST['region'] !== 'NULL' && $_POST['comments'] !== '' && $_POST['agree'] !== ''){
                 mail($to, $subject, $body);
@@ -91,10 +104,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form 2</title>
+    <title>Form 3</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+    <h1>myMeads() Function!</h1>
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
         <fieldset>
             <label>First Name</label>
