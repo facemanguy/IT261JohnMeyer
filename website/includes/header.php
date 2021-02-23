@@ -18,16 +18,7 @@
                 <li id="logobox">
                     <img class="logo" src="images/logo.svg" alt="John Meyer Logo"/>
                 </li>
-                <?php
-                    // Set to active page style
-                    foreach($nav as $key => $value){
-                        if(THIS_PAGE == $key){
-                            echo '<li class="active"><a href="'.$key.'"> '.$value.'</a></li>';
-                        }else{
-                            echo '<li><a href="'.$key.'"> '.$value.'</a></li>';
-                        }
-                    }
-                ?>
+                <?php echo makeLinks($nav);?>
             </ul>
         </nav>
 <!-- END HEADER INSERT -->

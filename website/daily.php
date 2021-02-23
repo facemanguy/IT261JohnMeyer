@@ -100,13 +100,13 @@ switch($today){
 			<div class="content2">
 				<h2>Check out the other days below</h2>
                 <ul>
-                    <li><a href="daily.php?today=Monday">Monday</a></li>
-                    <li><a href="daily.php?today=Tuesday">Tuesday</a></li>
-                    <li><a href="daily.php?today=Wednesday">Wednesday</a></li>
-                    <li><a href="daily.php?today=Thursday">Thursday</a></li>
-                    <li><a href="daily.php?today=Friday">Friday</a></li>
-                    <li><a href="daily.php?today=Saturday">Saturday</a></li>
-                    <li><a href="daily.php?today=Sunday">Sunday</a></li>
+                    <li><a style="color: <?php if($today == 'Monday'){echo 'goldenrod';}else{echo 'blue';};?>" href="daily.php?today=Monday">Monday</a></li>
+                    <li><a style="color: <?php if($today == 'Tuesday'){echo 'cyan';}else{echo 'blue';};?>" href="daily.php?today=Tuesday">Tuesday</a></li>
+                    <li><a style="color: <?php if($today == 'Wednesday'){echo 'hotpink';}else{echo 'blue';};?>" href="daily.php?today=Wednesday">Wednesday</a></li>
+                    <li><a style="color: <?php if($today == 'Thursday'){echo 'darkorange';}else{echo 'blue';};?>" href="daily.php?today=Thursday">Thursday</a></li>
+                    <li><a style="color: <?php if($today == 'Friday'){echo 'green';}else{echo 'blue';};?>" href="daily.php?today=Friday">Friday</a></li>
+                    <li><a style="color: <?php if($today == 'Saturday'){echo 'darkred';}else{echo 'blue';};?>" href="daily.php?today=Saturday">Saturday</a></li>
+                    <li><a style="color: <?php if($today == 'Sunday'){echo 'white';}else{echo 'blue';};?>" href="daily.php?today=Sunday">Sunday</a></li>
                 </ul>
                 <p><?php echo "I thought ".$alt." would like ".$today."s"?></p>
 			</div>
