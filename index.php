@@ -22,7 +22,7 @@
 						<li><a href="website/daily.php">HW 3: Using a Switch</a></li>
 						<li><a href="weeks/week4/adder.php">HW 4: TroubleShooting</a></li>
 						<li><a href="index.php#classwork">HW 5: Calculating Form</a></li>
-						<li><a href="#">HW 6: Emailable Form</a></li>
+						<li><a href="website/contact.php">HW 6: Emailable Form</a></li>
 					</ul>
 				</li>
 				<li><a href="index.php#classwork">Classwork</a></li>
@@ -108,7 +108,9 @@
 			<div>
 				<h4>Week 7 Classwork</h4>
 				<ul>
-					<li><a href="#">Yet to be completed 😮</a></li>
+					<li><a href="/it261/weeks/week7/random.php">Random.php</a></li>
+					<li><a href="/it261/weeks/week7/substr.php">Substr.php</a></li>
+					<li><a href="/it261/website/index.php">index.php</a></li>
 				</ul>
 			</div>
 			<div>
