@@ -3,7 +3,7 @@
 include('config.php');
 
 $sql = 'SELECT * FROM it261db';
-$iConn = mysqli_connect(DB_NAME, DB_HOST, DB_USER, DB_PASSWORD) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
 $result = mysqli_query($iConn, $sql) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
 
