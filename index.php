@@ -23,6 +23,7 @@
 						<li><a href="weeks/week4/adder.php">HW 4: TroubleShooting</a></li>
 						<li><a href="index.php#classwork">HW 5: Calculating Form</a></li>
 						<li><a href="website/contact.php">HW 6: Emailable Form</a></li>
+						<li><a href="website/gallery.php">HW 7: Gallery of Images</a></li>
 					</ul>
 				</li>
 				<li><a href="index.php#classwork">Classwork</a></li>
@@ -116,7 +117,10 @@
 			<div>
 				<h4>Week 8 Classwork</h4>
 				<ul>
-					<li><a href="#">Yet to be completed 😮</a></li>
+					<li><a href="/it261/weeks/week8/config.php">config.php</a></li>
+					<li><a href="/it261/weeks/week8/contents.txt">contents.txt</a></li>
+					<li><a href="/it261/weeks/week8/people.php">people.php</a></li>
+					<li><a href="/it261/weeks/week8/people-view.php">people-view.php</a></li>
 				</ul>
 			</div>
 			<div class="showcase1">
