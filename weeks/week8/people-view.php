@@ -30,3 +30,22 @@ if(mysqli_num_rows($result) > 0){
 
 <h1>Yay!</h1>
 <h2>Currently viewing <?php echo $FirstName;?>'s page</h2>
+<?php
+    if($feedback == ''){
+        echo '<ul>';
+        echo '<li><b>First Name:</b> '.$FirstName.'</li>';
+        echo '<li><b>Last Name:</b> '.$LastName.'</li>';
+        echo '<li><b>Occupation:</b> '.$Occupation.'</li>';
+        echo '<li><b>Email:</b> '.$Email.'</li>';
+        echo '<li><b>Birth Date:</b> '.$BirthDate.'</li>';
+        echo '</ul>';
+        echo '<p>'.$Description.'</p>';
+        echo '<p><a href="people.php">Return to people page</a></p>';
+    }else{
+        echo $feedback;
+    }
+    mysqli_free_result($result);
+    mysqli_close($iConn);
+    
+
+?>
