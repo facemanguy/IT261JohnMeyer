@@ -8,14 +8,14 @@
             <header>
                 <h1>John Meyer's IT261 Gallery Page</h1>
             </header>
-			<div class="showcase">
-				<h3>IMAGE BOX</h3>
-			</div>
-			<div class="content">
-				<h3>CONTENT 1</h3>
-			</div>
-			<div class="content">
-				<h3>CONTENT 2</h3>
+			<div class="galleryBox">
+				<table>
+					<tr>
+						<td><img src="images/folk1.jpg" alt="Orcs"></td>
+						<td>Orcs</td>
+						<td>Common</td>
+					</tr>
+				</table>
 			</div>
 
 			
