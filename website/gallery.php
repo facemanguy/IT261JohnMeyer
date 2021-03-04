@@ -8,7 +8,7 @@
 	// 	header('Location:index.php');
 	// }
 	
-	$sql = 'SELECT * FROM FantasyFolk WHERE FantasyFolkID = '.$id.'';
+	$sql = 'SELECT * FROM FantasyFolk';
 	
 	$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 	
@@ -44,7 +44,7 @@
                 <h1>John Meyer's IT261 Gallery Page</h1>
             </header>
 			
-            <?php include('includes/footer.php')?>
+            <?php include('includes/footer.php');?>
 
 		</div>
 	</body>
