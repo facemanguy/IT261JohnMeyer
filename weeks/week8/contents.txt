@@ -1,0 +1,11 @@
+content file
+
+Our contents:
+config.php  ----- calls out the credential.php
+credentials.php
+people.phppeople-view.php
+
+If working in week 8 folder
+
+website
+credentials.php
