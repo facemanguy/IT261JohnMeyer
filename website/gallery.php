@@ -34,6 +34,9 @@
 	}else{
 		echo'Nobody is home';
 	}
+
+	mysqli_free_result($result);
+	mysqli_close($iConn);
 ?>
 
 <!-- BEGIN GALLERY CONTENT -->
@@ -44,8 +47,7 @@
 			
             <?php include('includes/footer.php')?>
 			<?php
-				mysqli_free_result($result);
-				mysqli_close($iConn);
+
         	?>
 		</div>
 	</body>
