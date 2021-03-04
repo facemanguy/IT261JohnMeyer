@@ -1,6 +1,7 @@
 <?php
     include('config.php');
     include('includes/header.php');
+	include('includes/credentials.php');
 
 	if(isset($_GET['id'])){
 		$id = (int)$_GET['id'];

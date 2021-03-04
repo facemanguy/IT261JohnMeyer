@@ -3,7 +3,7 @@
     ob_start();
     define('DEBUG', 'TRUE');
 
-    include('includes/credentials.php');
+
 
     define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
