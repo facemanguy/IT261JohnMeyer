@@ -6,7 +6,7 @@
 	if(isset($_GET['id'])){
 		$id = (int)$_GET['id'];
 	}else{
-		header('Location:gallery.php');
+		header('Location:johnmeyerdev.com/it261/website/gallery.php');
 	}
 	
 	$sql = 'SELECT * FROM FantasyFolk WHERE FantasyFolkID = '.$id.'';
