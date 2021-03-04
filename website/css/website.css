@@ -128,3 +128,39 @@ footer {
     color: red;
     font-style: italic;
 }
+
+.galleryBox{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 100vh;
+
+    font-size: 16px;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.galleryBox div{
+    padding: 1rem;
+    border: 4px solid black;
+}
+
+.galleryBox td{
+    padding: 1rem;
+}
+
+.galleryBox td img{
+    max-height: 600px;
+    max-width: max-content;
+}
+
+.image {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+}
