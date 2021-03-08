@@ -4,6 +4,6 @@
 define('DB_NAME', 'it261db');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'johnm');
-define('DB_PASSWORD', 'hpdolphin32');
+define('DB_PASSWORD', 'thefmg');
 
 ?>
