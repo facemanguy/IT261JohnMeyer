@@ -1,6 +1,6 @@
 <?php
 // Registration Page
-//include('server.php');
+include('server.php');
 //include('includes/header.php');
 ?>
 
