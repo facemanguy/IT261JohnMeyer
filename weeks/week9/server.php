@@ -2,6 +2,7 @@
 // Server communication with database
 
 session_start();
+include('config.php');
 
 $FirstName = '';
 $LastName = '';
@@ -11,7 +12,7 @@ $errors = array();
 $success = 'You are now logged in';
 
 //Connection Start
-$db = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+$db = mysqli_connect("DB_HOST", "DB_USER", "DB_PASSWORD", "DB_NAME") or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
 //register user
 if(isset($_POST['reg_user'])){
