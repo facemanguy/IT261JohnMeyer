@@ -32,7 +32,7 @@ if(isset($_SESSION['success'])):?>
 
 <?php if(isset($_SESSION['UserName'])):?>
     <div class="welcome-logout">
-        <h3><?php echo $_SESSION['UserName'];?></h3>
+        <h3>Hello, <?php echo $_SESSION['UserName'];?></h3>
         <a href="index.php?logout='1'">Log Out</a>
     </div>
 <?php endif;?>
