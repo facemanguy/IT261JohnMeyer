@@ -18,7 +18,7 @@
 
 				if(mysqli_num_rows($result) > 0){
 					while($row = mysqli_fetch_assoc($result)){
-						echo '<div style="background-color: rgba(255, 245, 238, 0.1);">';
+						echo '<div style="background-color: rgba(255, 245, 238, 0.4);">';
 						echo '<ul>';
 						echo '<li><b>Common Name:</b>  '.$row['Name'].'</li>';
 						echo '<li><b>Scientific Name:</b>  '.$row['Species'].'</li>';

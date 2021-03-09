@@ -27,10 +27,9 @@ if(mysqli_num_rows($result) > 0){
 }
 $Occupation = 'Crab';
 ?>
-<div>
+<div class="gridContainer">
+    <h1>All about the <?php echo $Name;?></h1>
     <main>
-        <h1>Yay!</h1>
-        <h2>Currently viewing the <?php echo $Name;?>'s page</h2>
         <?php
             if($feedback == ''){
                 echo '<ul>';
@@ -45,7 +44,7 @@ $Occupation = 'Crab';
             }
             ?>
     </main>
-    <aside>
+    <aside class="image">
         <?php
             if($feedback == ''){
                 echo '<img src="images/crab'.$id.'.jpg" alt="'.$Species.'">';
