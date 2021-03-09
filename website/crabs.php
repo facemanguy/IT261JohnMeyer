@@ -5,7 +5,7 @@
 ?>
 
 <!-- BEGIN PEOPLE CONTENT -->
-	<div style="background-image: url('images/crabArt.jpg');">
+	<!-- <div style="background-image: url('images/crabArt.jpg');"> -->
 		<div class="gridContainer">
             <header>
                 <h1>Time for Crab!</h1>
@@ -40,6 +40,6 @@
             <?php include('includes/footer.php')?>
 			
 		</div>
-		</div>
+		<!-- </div> -->
 	</body>
 </html>
