@@ -25,8 +25,8 @@ if(mysqli_num_rows($result) > 0){
 }
 $Occupation = 'Crab';
 ?>
-<div class="wrapper" style="width: 80vw; margin: 0 auto;">
-    <main style="width: 50vw; float: left;">
+<div>
+    <main>
         <h1>Yay!</h1>
         <h2>Currently viewing the <?php echo $Name;?>'s page</h2>
         <?php
@@ -43,7 +43,7 @@ $Occupation = 'Crab';
             }
             ?>
     </main>
-    <aside style="width: 30vw; float: right;">
+    <aside>
         <?php
             if($feedback == ''){
                 echo '<img src="images/crab'.$id.'.jpg" alt="'.$Species.'">';

@@ -5,14 +5,12 @@
 ?>
 
 <!-- BEGIN PEOPLE CONTENT -->
+	<div style="background-image: url('images/crabArt.jpg');">
 		<div class="gridContainer">
             <header>
                 <h1>Time for Crab!</h1>
             </header>
 			<div class="showcase">
-				<h3>IMAGE BOX</h3>
-			</div>
-			<div class="content">
 				<h3>Crabs of the Pacific Northwest!</h3>
 				<?php
 				$sql = 'SELECT * FROM Crabs';
@@ -36,13 +34,10 @@
 				mysqli_close($iConn);
 				?>
 			</div>
-			<div class="content">
-				<h3>CONTENT 2</h3>
-			</div>
 
-			
             <?php include('includes/footer.php')?>
 			
+		</div>
 		</div>
 	</body>
 </html>
