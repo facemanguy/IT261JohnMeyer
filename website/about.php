@@ -8,17 +8,11 @@
             <header>
                 <h1>John Meyer's IT261 About Page</h1>
             </header>
-			<div class="showcase">
-				<h3>IMAGE BOX</h3>
+			<div class="showcase2">
+				<h3>My SQL Data</h3>
+				<img class="image" src="images/sqlData.JPG" alt="Adminer sql data on crabs page">
 			</div>
-			<div class="content">
-				<h3>CONTENT 1</h3>
-			</div>
-			<div class="content">
-				<h3>CONTENT 2</h3>
-			</div>
-
-			
+		
             <?php include('includes/footer.php')?>
 			
 		</div>
