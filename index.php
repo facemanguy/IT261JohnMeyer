@@ -24,6 +24,7 @@
 						<li><a href="index.php#classwork">HW 5: Calculating Form</a></li>
 						<li><a href="website/contact.php">HW 6: Emailable Form</a></li>
 						<li><a href="website/gallery.php">HW 7: Gallery of Images</a></li>
+						<li><a href="website/crabs.php">HW 8: Database integration</a></li>
 					</ul>
 				</li>
 				<li><a href="index.php#classwork">Classwork</a></li>
