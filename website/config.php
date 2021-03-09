@@ -8,7 +8,7 @@
         'index.php' => 'Home',
         'about.php' => 'About',
         'daily.php' => 'Daily',
-        'people.php' => 'People',
+        'crabs.php' => 'Crabs',
         'contact.php' => 'Contact',
         'gallery.php' => 'Gallery'
     );
@@ -70,9 +70,9 @@
         $body = 'daily';
         break;
 
-        case 'people.php':
-        $title = "People page of John's website project";
-        $body = 'people';
+        case 'crabs.php':
+        $title = "Crabs page of John's website project";
+        $body = 'crabs';
         break;
         
         case 'contact.php':
