@@ -13,7 +13,7 @@
 				<h3>IMAGE BOX</h3>
 			</div>
 			<div class="content">
-				<h3>CONTENT 1</h3>
+				<h3>Crabs of the Pacific Northwest!</h3>
 				<?php
 				$sql = 'SELECT * FROM Crabs';
 				$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
@@ -25,7 +25,7 @@
 						echo '<ul>';
 						echo '<li><b>Common Name:</b>  '.$row['Name'].'</li>';
 						echo '<li><b>Scientific Name:</b>  '.$row['Species'].'</li>';
-						echo '<li>Want to learn more about the <a href="people-view.php?id='.$row['CrabID'].' ">'.$row['Name'].'</a></li>';
+						echo '<li>Want to learn more about the <a href="crabs-view.php?id='.$row['CrabID'].' ">'.$row['Name'].'?</a></li>';
 						echo '</ul>';
 					}
 				}else{
