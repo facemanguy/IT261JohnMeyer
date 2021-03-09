@@ -10,8 +10,6 @@
 				<header>
 					<h1>Time for Crab!</h1>
 				</header>
-			
-				<h3>Crabs of the Pacific Northwest!</h3>
 				<?php
 				$sql = 'SELECT * FROM Crabs';
 				$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
@@ -20,7 +18,7 @@
 
 				if(mysqli_num_rows($result) > 0){
 					while($row = mysqli_fetch_assoc($result)){
-						echo '<div>';
+						echo '<div style="background-color: rgba(255, 245, 238, 0.1);">';
 						echo '<ul>';
 						echo '<li><b>Common Name:</b>  '.$row['Name'].'</li>';
 						echo '<li><b>Scientific Name:</b>  '.$row['Species'].'</li>';
