@@ -46,10 +46,10 @@ $Occupation = 'Crab';
             }
             ?>
     </div>
-    <div class="image aside">
+    <div class="aside">
         <?php
             if($feedback == ''){
-                echo '<img src="images/crab'.$id.'.jpg" alt="'.$Species.'">';
+                echo '<img class="image" src="images/crab'.$id.'.jpg" alt="'.$Species.'">';
             }
         ?>
     </div>
