@@ -10,7 +10,7 @@
             <header>
                 <h1>Time for Crab!</h1>
             </header>
-			<div class="showcase">
+			<div>
 				<h3>Crabs of the Pacific Northwest!</h3>
 				<?php
 				$sql = 'SELECT * FROM Crabs';
@@ -20,11 +20,13 @@
 
 				if(mysqli_num_rows($result) > 0){
 					while($row = mysqli_fetch_assoc($result)){
+						echo '<div>';
 						echo '<ul>';
 						echo '<li><b>Common Name:</b>  '.$row['Name'].'</li>';
 						echo '<li><b>Scientific Name:</b>  '.$row['Species'].'</li>';
 						echo '<li>Want to learn more about the <a href="crabs-view.php?id='.$row['CrabID'].' ">'.$row['Name'].'?</a></li>';
 						echo '</ul>';
+						echo '</div>';
 					}
 				}else{
 					echo 'Nobody home';
