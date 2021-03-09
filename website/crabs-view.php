@@ -29,7 +29,7 @@ $Occupation = 'Crab';
 ?>
 <div class="gridContainer">
     <h1>All about the <?php echo $Name;?></h1>
-    <main>
+    <div>
         <?php
             if($feedback == ''){
                 echo '<ul>';
@@ -43,14 +43,14 @@ $Occupation = 'Crab';
                 echo $feedback;
             }
             ?>
-    </main>
-    <aside class="image">
+    </div>
+    <div class="image">
         <?php
             if($feedback == ''){
                 echo '<img src="images/crab'.$id.'.jpg" alt="'.$Species.'">';
             }
         ?>
-    </aside>
+    </div>
         <?php
             mysqli_free_result($result);
             mysqli_close($iConn);
