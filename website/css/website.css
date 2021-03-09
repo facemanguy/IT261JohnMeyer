@@ -163,3 +163,8 @@ footer {
     grid-row-start: 2;
     grid-column: auto;
 }
+
+.crabData{
+    grid-row: auto;
+    grid-column: 1 / 3;
+}
