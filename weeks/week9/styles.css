@@ -7,3 +7,12 @@
 body{
     background: burlywood;
 }
+
+.wrapper{
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}

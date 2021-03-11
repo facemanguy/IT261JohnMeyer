@@ -27,7 +27,7 @@ include('includes/header.php');
 </form>
 
 <p class="center"><a href="login.php">Already a Member? Log in here</a></p>
-
+</div>
 <?php
     include('includes/footer.php')
 ?>
