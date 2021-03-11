@@ -14,7 +14,7 @@ if(isset($_GET['logout'])){
     header('Location:login.php');
 }
 
-//include('includes/header.php');
+include('includes/header.php');
 ?>
 
 <?php
@@ -38,3 +38,7 @@ if(isset($_SESSION['success'])):?>
 <?php endif;?>
 
 <h1>Welcome to the Home Page!</h1>
+
+</div>
+
+<?php include('includes/footer.php');?>
