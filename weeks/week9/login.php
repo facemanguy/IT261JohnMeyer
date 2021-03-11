@@ -1,7 +1,7 @@
 <?php
 
 include('server.php');
-//include('includes/header.php');
+include('includes/header.php');
 ?>
 
 <h1 class="center">Login</h1>
@@ -19,5 +19,5 @@ include('server.php');
 </form>
 
 <p class="center">Not Registered?<a href="register.php">Register Here!</a></p>
-
+</div>
 <?php include('includes/footer.php');?>
