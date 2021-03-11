@@ -1,7 +1,7 @@
 <?php
 // Registration Page
 include('server.php');
-//include('includes/header.php');
+include('includes/header.php');
 ?>
 
 <h1>Register Today</h1>
@@ -27,3 +27,7 @@ include('server.php');
 </form>
 
 <p class="center"><a href="login.php">Already a Member? Log in here</a></p>
+
+<?php
+    include('includes/footer.php')
+?>
