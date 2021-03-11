@@ -47,3 +47,11 @@ fieldset{
     border: 1px solid red;
     padding: 1rem;
 }
+
+.welcome-logout{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 1px solid red;
+    padding: 1rem;
+}
