@@ -4,7 +4,7 @@ include('server.php');
 //include('includes/header.php');
 ?>
 
-<h1>Login</h1>
+<h1 class="center">Login</h1>
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
     <fieldset>
@@ -19,3 +19,5 @@ include('server.php');
 </form>
 
 <p class="center">Not Registered?<a href="register.php">Register Here!</a></p>
+
+<?php include('includes/footer.php');?>
