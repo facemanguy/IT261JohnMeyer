@@ -1,5 +1,5 @@
         <footer>
-            <p>Footer section</p>
+            <p class="center">Footer section</p>
         </footer>
     </body>
 </html>

@@ -28,7 +28,10 @@ input[type=password]{
 form{
     max-width: 40vw;
     margin: 0 auto 1.5rem auto;
-    padding: 0.5rem;
+}
+
+fieldset{
+    padding: 1rem;
 }
 
 .error{
