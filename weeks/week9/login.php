@@ -18,6 +18,6 @@ include('includes/header.php');
     </fieldset>
 </form>
 
-<p class="center">Not Registered?<a href="register.php">Register Here!</a></p>
+<p class="center">Not Registered?<a href="register.php"> Register Here!</a></p>
 </div>
 <?php include('includes/footer.php');?>

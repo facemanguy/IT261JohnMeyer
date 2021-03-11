@@ -56,3 +56,7 @@ fieldset{
     padding: 1rem;
     margin-top: 1rem;
 }
+
+main{
+    background-color: seashell;
+}
