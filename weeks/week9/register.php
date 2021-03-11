@@ -4,7 +4,7 @@ include('server.php');
 include('includes/header.php');
 ?>
 
-<h1>Register Today</h1>
+<h1 class="center">Register Today</h1>
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
     <fieldset>
