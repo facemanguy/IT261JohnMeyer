@@ -39,3 +39,11 @@ fieldset{
     color: red;
     font-size: .9em;
 }
+
+.success{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border: 1px solid red;
+    padding: 1rem;
+}
