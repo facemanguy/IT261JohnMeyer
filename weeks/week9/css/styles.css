@@ -6,6 +6,7 @@
 
 body{
     background-color: burlywood;
+    padding: 1rem;
 }
 
 .wrapper{
@@ -32,6 +33,7 @@ form{
 
 fieldset{
     padding: 1rem;
+    background-color: cadetblue;
 }
 
 .error{
@@ -59,4 +61,8 @@ fieldset{
 
 main{
     background-color: seashell;
+}
+
+footer{
+    margin: 1rem;
 }

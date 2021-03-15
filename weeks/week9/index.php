@@ -39,6 +39,12 @@ if(isset($_SESSION['success'])):?>
 
 <h1>Welcome to the Home Page!</h1>
 
+<main>
+    <p>Here is some inforamtion for you:</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit cupiditate, illo consectetur eos placeat tempora esse provident ullam similique delectus, rem sequi, enim repudiandae nobis voluptas quod incidunt iure iste?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quas porro libero modi placeat, unde harum delectus, ullam possimus non rem consectetur officia, consequatur sint accusamus laudantium ipsum corporis. Provident.</p>
+</main>
+
 </div>
 
 <?php include('includes/footer.php');?>
