@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Nav CSS */
+
+.navbar {
+    background-color: rgb(127, 187, 15);
+    display: inline-block;
+    width: 100%;
+    padding-left: 10vw;
+}
+
+.navbar ul {
+    background: rgb(127, 187, 15);
+    list-style: none;
+    padding-left: 0;
+    display: block;
+}
+
+.navbar li {
+    color: #fff;
+    background:  rgb(127, 187, 15);
+    display: block;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    /* transition-duration: 0.5s; */
+}
+
+.navbar li a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.navbar li:hover,
+.navbar li:focus-within {
+    background: rgb(0, 204, 255);
+    cursor: pointer;
+}
+
+.navbar li:focus-within a {
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.navbar ul li ul {
+    background: rgb(47, 0, 255);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    /* transition: all 0.5s ease; */
+    /* margin-top: 1rem; */
+    left: 0;
+    display: none;
+    font-size: 0.8rem;
+}
+
+.navbar ul li:hover > ul,
+.navbar ul li:focus-within > ul,
+.navbar ul li ul:hover,
+.navbar ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar ul li ul li {
+    clear: both;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar li.active {
+    background-color: rgb(48, 98, 206);
+}
+
+.active a{
+    color: white;
+    font-weight: bold;
+}
+
+#logobox{
+    padding: inherit;
+    margin-right: 2vw;
+    max-width: 100%;
+    height: 4.5rem;
+}
+
+.logo {
+    object-fit: contain;
+    max-height: 90%;
+    margin-top: 4%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Grid Body */
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#d3e7e3;
+}
+
+header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    text-align: center;
+    line-height: 2;
+}
+
+.gridContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 100vh;
+
+    font-size: 16px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.gridContainer div {
+    padding: 1rem;
+    border: 4px solid black;
+}
+
+/* Switch Colors*/
+ul{list-style: none;}
+.white{background-color: #eee;}
+.yellow{background-color: yellow;}
+.darkorange{background-color: darkorange;}
+.lightblue{background-color: lightskyblue;}
+.red{background-color: darkred;}
+.salmon{background-color: salmon;}
+.violet{background-color: violet;}
+
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column: 1 / span 4;
+}
+
+.iterableGrid{
+    grid-row-start: 2;
+    grid-column: auto;
+}
+
+.menuData{
+    grid-row: auto;
+    grid-column: 1 / span 2;
+}
+
+/* Form */
+
+.formbox{
+    grid-row: auto;
+    grid-column: 1 / 3;
+}
+
+.formbox fieldset{
+    width: 100%;
+    height: 100%;
+}
+
+.formbox label{
+    display: block;
+    padding: 1rem 0.5rem 0.25rem 0.25rem;
+}
+
+.formbox input{
+    width: 100%;
+}
+
+.formbox li input{
+    width: auto;
+}
+
+.error{
+    color: red;
+    font-style: italic;
+}
