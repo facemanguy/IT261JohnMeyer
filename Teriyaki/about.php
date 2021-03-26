@@ -10,7 +10,7 @@
             </header>
 			<div class="showcase">
 				<h3>Tims secure SQL Data</h3>
-				<img class="image" src="images/database.jpg" alt="Teriyaki data base">
+				<img class="image" src="images/database.JPG" alt="Teriyaki data base">
 			</div>
 		
             <?php include('includes/footer.php')?>
