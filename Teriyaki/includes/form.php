@@ -30,16 +30,15 @@
             <li><input type="checkbox" name="sides[]" value="eggroll" <?php if(isset($_POST['sides']) && in_array('eggroll', $sides)) echo'checked="checked"';?>> Egg Rolls</li>
         </ul>
         <span class="error"><?php echo $sidesError;?></span>
-        <label>Faction</label>
-        <select name="faction">
-            <option value="NULL" <?php if(isset($_POST['faction']) && $_POST['faction'] == 'NULL') echo'selected="unselected"';?>>Select One</option>
-            <option value="empire" <?php if(isset($_POST['faction']) && $_POST['faction'] == 'empire') echo'selected="selected"';?>>Empire</option>
-            <option value="khans" <?php if(isset($_POST['faction']) && $_POST['faction'] == 'khans') echo'selected="selected"';?>>Khans</option>
-            <option value="barons" <?php if(isset($_POST['faction']) && $_POST['faction'] == 'barons') echo'selected="selected"';?>>Barons</option>
-            <option value="islanders" <?php if(isset($_POST['faction']) && $_POST['faction'] == 'islanders') echo'selected="selected"';?>>Islanders</option>
-            <option value="vikings" <?php if(isset($_POST['faction']) && $_POST['faction'] == 'vikings') echo'selected="selected"';?>>Vikings</option>
+        <label>pickup</label>
+        <select name="pickup">
+            <option value="NULL" <?php if(isset($_POST['pickup']) && $_POST['pickup'] == 'NULL') echo'selected="unselected"';?>>Select One</option>
+            <option value="now" <?php if(isset($_POST['pickup']) && $_POST['pickup'] == 'now') echo'selected="selected"';?>>Pickup Now</option>
+            <option value="later" <?php if(isset($_POST['pickup']) && $_POST['pickup'] == 'later') echo'selected="selected"';?>>Pickup Later</option>
+            <option value="request" <?php if(isset($_POST['pickup']) && $_POST['pickup'] == 'request') echo'selected="selected"';?>>At Requested Time</option>
+            <option value="delivery" <?php if(isset($_POST['pickup']) && $_POST['pickup'] == 'delivery') echo'selected="selected"';?>>Delivery</option>
         </select>
-        <span class="error"><?php echo $factionError;?></span>
+        <span class="error"><?php echo $pickupError;?></span>
         <label>Comments</label>
         <textarea name="comments"><?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments']);?></textarea>
         <span class="error"><?php echo $commentsError;?></span>

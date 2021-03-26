@@ -5,7 +5,7 @@
 ?>
 
 <!-- BEGIN PEOPLE CONTENT -->
-		<div>
+		<div style="background-image: url('images/display.jpg');">
 			<div class="gridContainer">
 				<header>
 					<h1>Time to Eat!</h1>

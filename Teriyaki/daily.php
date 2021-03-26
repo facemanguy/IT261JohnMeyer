@@ -16,56 +16,56 @@ if(isset($_GET['today'])){
 switch($today){
     case 'Monday':
     $character = 'Monday\'s special is Chicken Teriyaki';
-    $pic = 'picard.jpg';
-    $alt = "Jean-Luc Picard";
+    $pic = 'chicken.jpg';
+    $alt = "Chicken Teriyaki";
     $content = "An absolute classic, Tim's chicken teriyaki is sure to be a crowd pleaser. Start your week off right with Tim's!";
     $background = 'white';
     break;
 
     case 'Tuesday':
     $character = 'Tuesday\'s special is Bento';
-    $pic = 'data.jpg';
-    $alt = "Data";
+    $pic = 'bento.jpg';
+    $alt = "Bento Box";
     $content = 'A home cooked box of goodness that sparks joy in everyone\'s day. Bring home some bento for cheap every Tuesday!';
     $background = 'darkorange';
     break;
     
     case 'Wednesday':
     $character = 'Wednesday\'s special is General Tso\'s spicy chicken.';
-    $pic = 'geordi.jpeg';
-    $alt = "Geordi La Forge";
+    $pic = 'tso.jpg';
+    $alt = "General Tso Chicken";
     $content = 'What a way to spice up your Wednesday!';
     $background = 'yellow';
     break;
 
     case 'Thursday':
     $character = 'Thursday\'s special is Pork Combo';
-    $pic = 'crusher.jpg';
-    $alt = "Beverly Crusher";
+    $pic = 'combo.jpg';
+    $alt = "Pork and Chicken Combo";
     $content = 'Pick any pork combination meal and enjoy a nice discount!';
     $background = 'lightblue';
     break;
 
     case 'Friday':
     $character = 'Friday\'s special is Yakisoba';
-    $pic = 'worf.jpg';
-    $alt = "Worf";
+    $pic = 'yakisoba.jpg';
+    $alt = "Yakisoba";
     $content = "Long noodles for a long week. Enjoy some yakisoba with the start of the weekend!";
     $background = 'red';
     break;
     
     case 'Saturday':
     $character = 'Saturday\'s special is Gyoza';
-    $pic = 'riker.jpg';
-    $alt = "William Riker";
+    $pic = 'gyoza.jpg';
+    $alt = "Gyoza dumpling platter";
     $content = 'Gyoza is the perfect appetizer to any dish. Grab a discount on all the different platters!';
     $background = 'salmon';
     break;
 
     case 'Sunday':
     $character = 'Sunday\'s special is Sushi';
-    $pic = 'troi.jpg';
-    $alt = "Deanna Troi";
+    $pic = 'sushi.jpg';
+    $alt = "Sushi platter";
     $content = "Sushi is the perfect poppable snack. Grab any plate for cheap every Sunday!";
     $background = 'violet';
     break;
@@ -96,7 +96,8 @@ switch($today){
 			</div>
 			<div class="<?php echo $background;?>">
                 <h2><?php echo $content;?></h2>
-                <br>
+            </div>
+            <div class="<?php echo $background;?>">
 				<h3>Check out our other daily specials below:</h3>
                 <ul>
                     <li><a style="color: <?php if($today == 'Monday'){echo 'goldenrod';}else{echo 'blue';};?>" href="daily.php?today=Monday">Monday</a></li>

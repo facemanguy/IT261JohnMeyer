@@ -35,20 +35,15 @@
     // }
 
     function menuImages(){
-        $photos[0] = '';
-        $photos[1] = '';
-        $photos[2] = '';
-        $photos[3] = '';
-        $photos[4] = '';
-        $photos[5] = '';
-        $photos[6] = '';
-        $photos[7] = '';
-        $photos[8] = '';
-        $photos[9] = '';
-        $photos[10] = '';
-        $photos[11] = '';
+        $photos[0] = 'bowl';
+        $photos[1] = 'neatsushi';
+        $photos[2] = 'platter';
+        $photos[3] = 'leafy';
+        $photos[4] = 'dragonfruit';
+        $photos[5] = 'kebab';
+        $photos[6] = 'shrimp';
         
-        $i = rand(0, 11);
+        $i = rand(0, 6);
         $selectedImage = 'images/'.$photos[$i].'.jpg';
         echo '<img class="image" src="'.$selectedImage.'" alt="'.$photos[$i].'">';
     }
@@ -91,7 +86,7 @@
     $email = '';
     $protein = '';
     $sides = '';
-    $faction = '';
+    $pickup = '';
     $comments = '';
     $agree = '';
     $phone = '';
@@ -101,7 +96,7 @@
     $emailError = '';
     $proteinError = '';
     $sidesError = '';
-    $factionError = '';
+    $pickupError = '';
     $commentsError = '';
     $agreeError = '';
     $phoneError = '';
@@ -148,10 +143,10 @@
             $sides = $_POST['sides'];
         }
 
-        if($_POST['faction'] == 'NULL'){
-            $factionError = 'Please select a faction';
+        if($_POST['pickup'] == 'NULL'){
+            $pickupError = 'Please select a pickup method';
         }else{
-            $faction = $_POST['faction'];
+            $pickup = $_POST['pickup'];
         }
 
         if(empty($_POST['comments'])){
@@ -177,7 +172,7 @@
         }
 
 
-        if(isset($_POST['firstName'], $_POST['lastName'], $_POST['email'], $_POST['phone'], $_POST['protein'], $_POST['sides'], $_POST['faction'], $_POST['comments'], $_POST['agree'])){
+        if(isset($_POST['firstName'], $_POST['lastName'], $_POST['email'], $_POST['phone'], $_POST['protein'], $_POST['sides'], $_POST['pickup'], $_POST['comments'], $_POST['agree'])){
             $to = 'john32meyer@gmail.com';
             $subject = 'Test Email for Form 1 '.date('m/d/y');
             $body = 'First and Last name '.$firstName.' '.$lastName.'!'.PHP_EOL.'
@@ -185,12 +180,12 @@
             Your Phone Number is: '.$phone.''.PHP_EOL.'
             Your protein is: '.$protein.''.PHP_EOL.'
             Youe comments were: '.$comments.''.PHP_EOL.'
-            Your selected faction is: '.$faction.''.PHP_EOL.'
+            Your selected pickup method is: '.$pickup.''.PHP_EOL.'
             Your selected sides are: '.sidedish().'';
 
             $headers = array('From' => 'no-reply@johnmeyerdev.com', 'Reply-to' => ' '.$email.'');
 
-            if($_POST['firstName'] !== '' && $_POST['lastName'] !== '' && $_POST['email'] && $_POST['phone'] !== '' && preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']) && $_POST['protein'] !== '' && $_POST['sides'] !== '' && $_POST['faction'] !== 'NULL' && $_POST['comments'] !== '' && $_POST['agree'] !== ''){
+            if($_POST['firstName'] !== '' && $_POST['lastName'] !== '' && $_POST['email'] && $_POST['phone'] !== '' && preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']) && $_POST['protein'] !== '' && $_POST['sides'] !== '' && $_POST['pickup'] !== 'NULL' && $_POST['comments'] !== '' && $_POST['agree'] !== ''){
                 mail($to, $subject, $body, $headers);
                 header('Location:../weeks/week6/thanks.php');
             }
