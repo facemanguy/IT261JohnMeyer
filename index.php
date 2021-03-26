@@ -44,6 +44,8 @@
 				<p>Hello! I'm John Meyer, an aspiring web development student working towards my degree. This is my portal page for my IT 261 Web App programming course at Seattle Central College. In here you'll find several pages I've worked on in PHP as part of my coursework. Enjoy!</p>
 				<p>I always knew I wanted to program since I was little. Of course I wanted to work on games for the longest time. I took a high school game programming course that threw me right into the deep end; My first language was C++! I switched my focus from game development to Web development in 2018 as it seemed the more reasonable option. Around the same time I landed into Seattle University's Web development certificate program. Now I'm looking to capitalize that into a degree at SCC hopefully landing a job in the field shortly after graduating.</p>
 				<p>I have an eclectic set of hobbies from the super nerdy to incredibly sporty. I paint miniatures, play role playing games, ride motorcycles, and am an excellent snowboarder. I spent a season as a snowboard instructor a few years back so in case you ever wanted to learn I can help you out! I can play bass guitar and have been to germany. There's a lot more about me if you ever want to chat.</p>
+				<br>
+				<h4>Check out my Final Project <a href="/it261/Teriyaki/index.php">here!</a></h4>
 			</main>
 
 			<div id="classwork">
