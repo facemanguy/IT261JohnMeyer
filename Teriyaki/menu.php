@@ -22,7 +22,7 @@
 						echo '<ul>';
 						echo '<li><b>Dish:</b>  '.$row['dishName'].'</li>';
 						echo '<li><b>Price:</b>  '.$row['price'].'</li>';
-						echo '<li>More information<a href="menu-view.php?id='.$row['menuId'].' ">Here</a></li>';
+						echo '<li>More information <a href="menu-view.php?id='.$row['menuId'].' ">Here</a></li>';
 						echo '</ul>';
 						echo '</div>';
 					}
