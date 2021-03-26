@@ -146,6 +146,7 @@ header {
 
     gap: 1rem;
     box-sizing: border-box;
+    line-height: 1.8;
 }
 
 .gridContainer div {
