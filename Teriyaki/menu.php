@@ -6,7 +6,7 @@
 
 <!-- BEGIN PEOPLE CONTENT -->
 		<div style="background-image: url('images/display.jpg');">
-			<div class="gridContainer">
+			<div class="gridContainer" style="grid-template-columns: (4, 1fr);">
 				<header>
 					<h1>Time to Eat!</h1>
 				</header>
@@ -21,7 +21,7 @@
 						echo '<div style="background-color: rgba(255, 245, 238, 0.6);">';
 						echo '<ul>';
 						echo '<li><b>Dish:</b>  '.$row['dishName'].'</li>';
-						echo '<li><b>Price:</b>  '.$row['price'].'</li>';
+						echo '<li><b>Price:</b>  $'.$row['price'].'</li>';
 						echo '<li>More information <a href="menu-view.php?id='.$row['menuId'].' ">Here</a></li>';
 						echo '</ul>';
 						echo '</div>';
